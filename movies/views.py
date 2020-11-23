@@ -9,3 +9,10 @@ def index(request):
     return render(request, 'movies/index.html', {'movies': movies})
     # output = ", ".join([m.title for m in moives])
     # return HttpResponse(output)
+
+
+def detail(request, movie_id):
+    #movie = Movie.objects.filter(id=movie_id)
+    # return render(request, 'movies/index.html', {'movies': movies})
+    # # output = ", ".join([m.title for m in moives])
+    return HttpResponse(movie_id)
