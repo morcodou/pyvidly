@@ -5,6 +5,7 @@ from .models import Movie
 
 
 def index(request):
-    moives = Movie.objects.all()
-    output = ", ".join([m.title for m in moives])
-    return HttpResponse(output)
+    movies = Movie.objects.all()
+    return render(request, 'movies/index.html', {'movies': movies})
+    # output = ", ".join([m.title for m in moives])
+    # return HttpResponse(output)
