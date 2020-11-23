@@ -6,6 +6,8 @@ name = "pypi"
 [packages]
 django = "*"
 django-tastypie = "*"
+gunicorn = "*"
+whitenoise = "*"
 
 [dev-packages]
 autopep8 = "*"
