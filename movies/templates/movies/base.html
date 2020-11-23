@@ -14,9 +14,16 @@
 </head>
 
 <body>
-    {% block content %}
+    <!-- As a link -->
+    <nav class="navbar navbar-light bg-light">
+        <a class="navbar-brand" href="#">PyVidly</a>
+    </nav>
+    <main class="container">
+        {% block content %}
 
-    {% endblock %}
+        {% endblock %}
+    </main>
+
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
